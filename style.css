@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 .content {
   flex-grow: 1;
-  padding: 0 var(--padding);
+  padding: var(--padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -342,6 +342,12 @@ footer nav {
   html {
     font-size: 14px;
   }
+
+  .content {
+    padding: var(--padding);
+    margin: 10px;
+  }
+
   .Home .contenaire-images,
   .About .contenaire-images {
     display: none;
@@ -350,8 +356,14 @@ footer nav {
 /* Styles pour tablettes (largeur d'écran entre 480px et 768px) */
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .content {
-    padding: 0 5%;
+    padding: var(--padding);
+    margin: 10px;
   }
+
+  nav ul .btn {
+    display: none;
+  }
+
   .Home .contenaire-images,
   .About .contenaire-images {
     display: none;
@@ -414,6 +426,15 @@ footer nav {
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+
+  .content {
+    padding: var(--padding);
+    margin: 10px;
+  }
+
+  nav ul .btn {
+    display: none;
   }
 
   nav .nav-links {
